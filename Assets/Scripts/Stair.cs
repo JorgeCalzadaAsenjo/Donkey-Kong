@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Stair : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.gameObject.tag.Equals("Player"))
+        {
+            other.gameObject.SendMessage("CanUpDown");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D other)
     {
-        
+        if (other.gameObject.tag.Equals("Player"))
+        {
+            other.gameObject.SendMessage("CantUpDown");
+        }
     }
 }

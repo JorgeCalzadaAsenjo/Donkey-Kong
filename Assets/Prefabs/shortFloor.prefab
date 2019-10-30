@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4836940168002283815}
   - component: {fileID: -4755850966165948188}
   - component: {fileID: 9120114834920968755}
+  - component: {fileID: -5706293676348054280}
   m_Layer: 0
   m_Name: shortFloor
   m_TagString: Untagged
@@ -130,3 +131,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &-5706293676348054280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4836940168002283814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a92018e5611b0b4888a04f1089d6bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

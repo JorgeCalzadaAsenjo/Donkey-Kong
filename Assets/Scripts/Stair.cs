@@ -10,6 +10,13 @@ public class Stair : MonoBehaviour
         {
             other.gameObject.SendMessage("CanUpDown");
         }
+        else if (other.gameObject.tag.Equals("Barrel"))
+        {
+            if (transform.position.y < other.transform.position.y)
+            {
+                other.gameObject.SendMessage("CanDown");
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
